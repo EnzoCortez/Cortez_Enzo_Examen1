@@ -6,7 +6,7 @@ namespace CortezEnzoExamen1
 {
     public partial class RecargaPage : ContentPage
     {
-        private string FilePath => Path.Combine(FileSystem.AppDataDirectory, "UltimaRecarga.txt");
+        private string filePath = Path.Combine(FileSystem.AppDataDirectory, "EnzoCortez.txt");
 
         public RecargaPage()
         {
@@ -26,20 +26,24 @@ namespace CortezEnzoExamen1
             }
 
             string data = $"Nombre: {name}\nNúmero: {phone}";
-            File.WriteAllText(FilePath, data);
+            File.WriteAllText(filePath, data);
 
-            // Mostrar Toast (dependiendo de la plataforma)
+            // Mostrar alerta de éxito
+            DisplayAlert("Éxito", "Recarga realizada correctamente.", "OK");
 
-
-            // Recargar datos
+            // Cargar datos de la última recarga
             LoadLastRecarga();
         }
 
         private void LoadLastRecarga()
         {
-            if (File.Exists(FilePath))
+            if (File.Exists(filePath))
             {
-                label_lastRecargaDetails.Text = File.ReadAllText(FilePath);
+                label_lastRecargaDetails.Text = File.ReadAllText(filePath);
+            }
+            else
+            {
+                label_lastRecargaDetails.Text = "No hay recargas guardadas.";
             }
         }
     }
