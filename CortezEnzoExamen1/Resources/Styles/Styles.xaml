@@ -423,4 +423,15 @@
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
+    <?xml version="1.0" encoding="utf-8"?>
+   
+
+        <Style x:Key="ApellidoStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="Red" />
+            <!-- Cambia el color aquí si lo necesitas -->
+        </Style>
+
+    
+
+
 </ResourceDictionary>
