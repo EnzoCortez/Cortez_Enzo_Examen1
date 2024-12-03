@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using Microsoft.Maui.Controls;
 
 namespace CortezEnzoExamen1
@@ -22,6 +23,13 @@ namespace CortezEnzoExamen1
             if (string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(name))
             {
                 DisplayAlert("Error", "Debe ingresar todos los datos.", "OK");
+                return;
+            }
+
+            // Validar que solo se ingresen números en el campo de teléfono
+            if (!Regex.IsMatch(phone, @"^\d+$"))
+            {
+                DisplayAlert("Error", "El número de teléfono solo puede contener dígitos.", "OK");
                 return;
             }
 
