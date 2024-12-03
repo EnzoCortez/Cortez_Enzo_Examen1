@@ -1,6 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<?xaml-comp compile="true" ?>
-<ResourceDictionary 
+﻿<ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
@@ -423,15 +421,9 @@
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
-    <?xml version="1.0" encoding="utf-8"?>
-   
-
-        <Style x:Key="ApellidoStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="Red" />
-            <!-- Cambia el color aquí si lo necesitas -->
-        </Style>
-
-    
-
+    <Style x:Key="ApellidoStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="Red" />
+        <!-- Cambia el color aquí si lo necesitas -->
+    </Style>
 
 </ResourceDictionary>

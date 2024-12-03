@@ -54,5 +54,11 @@ namespace CortezEnzoExamen1
                 label_lastRecargaDetails.Text = "No hay recargas guardadas.";
             }
         }
+
+        private async void OnNavigateToNamePageClicked(object sender, EventArgs e)
+        {
+            // Navegar a NamePage
+            await Navigation.PushAsync(new NamePage());
+        }
     }
 }

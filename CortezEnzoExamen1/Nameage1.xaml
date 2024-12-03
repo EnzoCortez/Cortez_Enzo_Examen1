@@ -3,18 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CortezEnzoExamen1.NamePage">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style x:Key="ApellidoStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="Red" />
-                <!-- Cambia el color a tu preferencia -->
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
+   
 
     <Grid RowSpacing="10" ColumnSpacing="10" Padding="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="50" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -22,9 +15,10 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <Label Text="Primer Nombre" Grid.Row="0" Grid.Column="0" />
-        <Label Text="Segundo Nombre" Grid.Row="0" Grid.Column="1" />
-        <Label Text="Primer Apellido" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoStyle}" />
-        <Label Text="Segundo Apellido" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoStyle}" />
+        <Label Text="Enzo" Grid.Row="0" Grid.Column="0" />
+        
+        <Label Text="Tomas" Grid.Row="0" Grid.Column="1" />
+        <Label Text="Cortez" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoStyle}" />
+        <Label Text="Valencia" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoStyle}" />
     </Grid>
 </ContentPage>

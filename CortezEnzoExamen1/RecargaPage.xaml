@@ -8,5 +8,7 @@
         <Entry x:Name="entry_phone" Placeholder="Número de Teléfono" Keyboard="Telephone" />
         <Button Text="Recargar" Clicked="OnRecargarClicked" />
         <Label x:Name="label_lastRecargaDetails" Text="Última recarga aparecerá aquí" />
+        <Button Text="Ir a la página de nombres" Clicked="OnNavigateToNamePageClicked" />
+
     </StackLayout>
 </ContentPage>
